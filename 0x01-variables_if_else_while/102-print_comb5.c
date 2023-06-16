@@ -1,25 +1,21 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible different combinations of three digits
+ * main - prints all possible different combinations of two two-digit numbers
  * Return: Always 0 (Success)
  */
 int main(void) {
-  int a, b, c;
+  int a, b;
 
-  for (a = 0; a <= 9; a++) {
-    for (b = 0; b <= 9; b++) {
-      for (c = 0; c <= 9; c++) {
-        if (a < b && b < c) {
-          putchar(a + '0');
-          putchar(b + '0');
-          putchar(c + '0');
-          if (a != 9 || b != 8 || c != 7) {
-            putchar(',');
-            putchar(' ');
-          }
-        }
-      }
+  for (a = 0; a <= 99; a++) {
+    for (b = a + 1; b <= 99; b++) {
+      putchar('0' + (a / 10));
+      putchar('0' + (a % 10));
+      putchar(' ');
+      putchar('0' + (b / 10));
+      putchar('0' + (b % 10));
+      putchar(',');
+      putchar(' ');
     }
   }
 
@@ -27,4 +23,5 @@ int main(void) {
 
   return 0;
 }
+
 
