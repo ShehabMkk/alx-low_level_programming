@@ -1,0 +1,6 @@
+echo "enter the name"
+read name
+chmod u+x $name
+git add .
+git commit -m 1
+git push
