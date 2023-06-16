@@ -5,19 +5,19 @@
  * Return: Always 0 (Success)
  */
 int main(void) {
-  int a, b;
+  int a, b, c;
 
-  for (a = 0; a <= 99; a++) {
-    for (b = 0; b <= 99; b++) {
-      if (a < b) {
-        putchar('0' + (a / 10));
-        putchar('0' + (a % 10));
-        putchar(' ');
-        putchar('0' + (b / 10));
-        putchar('0' + (b % 10));
-        if (a != 98 || b != 99) {
-          putchar(',');
-          putchar(' ');
+  for (a = 0; a <= 9; a++) {
+    for (b = 0; b <= 9; b++) {
+      for (c = 0; c <= 9; c++) {
+        if (a < b && b < c) {
+          putchar(a + '0');
+          putchar(b + '0');
+          putchar(c + '0');
+          if (a != 9 || b != 8 || c != 7) {
+            putchar(',');
+            putchar(' ');
+          }
         }
       }
     }
