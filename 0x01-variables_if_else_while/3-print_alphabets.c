@@ -1,9 +1,14 @@
 #include <stdio.h>
-
-
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ *
+ **/
 int main(void)
 {
 	char c = 'a';
+
 	while (1)
 	{
 		putchar(c);
@@ -16,10 +21,6 @@ int main(void)
 			break;
 		c++;
 	}
-
-
 	putchar('\n');
-
-
 	return (0);
 }
