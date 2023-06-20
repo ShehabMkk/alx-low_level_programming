@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
+ * _abs - check the code
  * @n :integer
  * Return: Always 0.
  */
