@@ -3,7 +3,7 @@
  * main - main
  * Return: 0.
  */
-void main(void)
+void print_alphabet(void)
 {
 	for (int i = 'a'; i <= 'z'; i++)
 	{
